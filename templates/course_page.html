@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LMS Course Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1 style="display: flex; justify-content: center;">
+        <img src="../static/gems-education-logo.png" alt="" style="display: flex; justify-content: center;">
+        </h1>
+    <div>
+        <h2>Course Title</h2>
+        <a href="/dashboard"><button>Back to Dashboard</button></a>
+        <div id="modules">
+            <h3>Modules</h3>
+            <ul>
+                <li>Module 1</li>
+                <li>Module 2</li>
+                <li>Module 3</li>
+            </ul>
+        </div>
+        <div id="assignments">
+            <h3>Assignments</h3>
+            <ul>
+                <li>Assignment 1</li>
+                <li>Assignment 2</li>
+            </ul>
+        </div>
+        <div id="resources">
+            <h3>Resources</h3>
+            <ul>
+                <li>Resource 1</li>
+                <li>Resource 2</li>
+            </ul>
+        </div>
+        <div id="discussion">
+            <h3>Discussion Forum</h3>
+            <ul>
+                <li>Post 1</li>
+                <li>Post 2</li>
+            </ul>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='main.js') }}"></script>
+</body>
+</html>
